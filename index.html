@@ -3,87 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OJapp Guide｜使い方と活用ブログ</title>
+  <title>OJapp Guide | OJapp公式ガイド</title>
 
   <!-- OGP（あとで本番URLに置き換える） -->
-  <meta property="og:title" content="OJapp Guide｜使い方と活用ブログ">
+  <meta property="og:title" content="OJapp Guide｜公式ガイド">
   <meta property="og:description" content="OJappシリーズの使い方・活用アイデア・トラブルシュートまでまとめた公式ガイド。">
   <meta property="og:image" content="https://guide.ojapp.app/ogp.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://guide.ojapp.app">
 
   <link rel="stylesheet" href="/assets/main.css" />
-  <script defer src="/assets/drawer.js"></script>
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <div class="logo">OJapp Guide</div>
-    <button class="drawer-btn" id="drawerBtn">☰</button>
-  </div>
+<header>
+  <h1>OJapp Guide</h1>
+  <button id="drawer-btn">☰</button>
 </header>
 
-<nav class="drawer" id="drawer">
-  <ul>
-    <li><a href="/">🏠 トップページ</a></li>
-    <li><a href="/category/ojapp.html">📱 OJapp</a></li>
-    <li><a href="/category/tools.html">🧰 ツール一覧</a></li>
-    <li><a href="/category/tips.html">💡 小技・Tips</a></li>
-    <li><a href="/category/news.html">📰 お知らせ</a></li>
-  </ul>
-</nav>
-
-<main class="container">
-   <!-- ヒーローエリア -->
-  <section class="hero">
-    <div class="hero-inner">
-      <img src="/assets/thumb/default.png" alt="OJapp Guide" class="hero-logo">
-      <h1>OJapp Guide</h1>
-      <p class="hero-sub">ホーム画面を変えると、自分も変わる。</p>
-    </div>
-  </section>
-  <h1 class="page-title">最新記事</h1>
-
-  <div class="articles">
-
-    <!-- ▼ 記事カード（手動 or 自動生成OK） -->
-    <a href="/articles/icon-change.html" class="card">
-      <img src="/assets/thumb/home-icon.png" alt="">
-      <div class="card-body">
-        <h2>ショートカット無しでホーム画面アイコンを変える方法</h2>
-        <p>iPhoneのホーム画面に追加したアイコンを自由に変えたい人向けのガイド。</p>
-      </div>
-    </a>
-
-    <a href="/articles/booth-icon.html" class="card">
-      <img src="/assets/thumb/booth.png" alt="">
-      <div class="card-body">
-        <h2>BOOTHやBASEのショップをホーム画面に置くとアイコンが変わる問題</h2>
-        <p>ショップのアイコンで追加されない理由と、解決方法をまとめました。</p>
-      </div>
-    </a>
-
-     <a href="/articles/shortcut-compare.html" class="card">
-      <img src="/assets/thumb/pass.png" alt="">
-      <div class="card-body">
-        <h2>ショートカット vs OJapp　完全比較</h2>
-        <p>ショートカットとOJappの出来ること出来ないことまとめてみました。</p>
-      </div>
-    </a>
-
-    <a href="/articles/oj-pass.html" class="card">
-      <img src="/assets/thumb/pass.png" alt="">
-      <div class="card-body">
-        <h2>忘れても思い出せるパスワード生成ツールを作った話</h2>
-        <p>OJ-Passの思想と裏側の仕組みを開発者本人が解説。</p>
-      </div>
-    </a>
-    <!-- ▲ 記事カード -->
-
-  </div>
+<main>
+  <h2>最新記事</h2>
+  <div id="article-list"></div>
 </main>
+
+<script src="/assets/drawer.js"></script>
+
+<script>
+async function loadArticles() {
+  const res = await fetch('/articles/list.json');
+  const posts = await res.json();
+  const list = document.getElementById("article-list");
+
+  list.innerHTML = posts.reverse().map(post => `
+    <a class="card" href="/articles/${post.slug}.html">
+      <img src="${post.thumb}" alt="${post.title}">
+      <div class="card-body">
+        <h3>${post.title}</h3>
+        <p>${post.subtitle}</p>
+      </div>
+    </a>
+  `).join('');
+}
+
+loadArticles();
+</script>
 
 <footer class="site-footer">
   <p>© 2026 OJapp Guide</p>

@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>記事タイトル｜OJapp Guide</title>
-
-  <link rel="stylesheet" href="/assets/main.css" />
-  <script defer src="/assets/drawer.js"></script>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
-
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <div class="logo">OJapp Guide</div>
-    <button class="drawer-btn" id="drawerBtn">☰</button>
-  </div>
+<header>
+  <h1>OJapp Guide</h1>
 </header>
 
-<nav class="drawer" id="drawer">
-  <ul>
-    <li><a href="/">🏠 トップページ</a></li>
-    <li><a href="/category/ojapp.html">📱 OJapp</a></li>
-    <li><a href="/category/tools.html">🧰 ツール一覧</a></li>
-  </ul>
-</nav>
+<main id="article"></main>
 
-<main class="container">
+<script>
+(async () => {
+  const slug = location.pathname.split('/').pop().replace('.html', '');
+  const list = await fetch('/articles/list.json').then(r => r.json());
+  const meta = list.find(a => a.slug === slug);
 
-  <article class="post">
-    <h1 class="post-title">記事タイトル</h1>
-    <p class="post-date">2026/01/XX</p>
+  // SEO 反映
+  document.title = meta.title + " | OJapp Guide";
+  document.querySelector("meta[name='description']").content = meta.seo;
 
-    <div class="post-body">
-      <p>ここに記事本文を書く。</p>
-      <p>画像を入れる場合は <code>&lt;img src=""&gt;</code>。</p>
-    </div>
-  </article>
+  // 本文読み込み
+  const html = await fetch(`/articles/content/${slug}.html`).then(r => r.text());
 
-</main>
-
-<footer class="site-footer">
-  <p>© 2026 OJapp Guide</p>
-</footer>
+  document.getElementById("article").innerHTML = `
+    <h1>${meta.title}</h1>
+    <p class="subtitle">${meta.subtitle}</p>
+    <article>${html}</article>
+  `;
+})();
+</script>
 
 </body>
 </html>

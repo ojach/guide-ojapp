@@ -3,33 +3,32 @@
     "slug": "icon-change",
     "title": "ショートカットなしでホーム画面のアイコンを変更する方法",
     "subtitle": "iPhone/Androidですぐ使える、最も簡単なアイコン変更ガイド。",
-    "thumb": "/assets/thumb/home-icon.png",
-    "seo": "ショートカット不要でホーム画面アイコンを自由に変更する方法を解説。",
+    "description": "ショートカット不要でホーム画面アイコンを自由に変更する方法を解説。",
+    "thumb": "/assets/thumb/icon-change.png",
     "date": "2026-01-22"
   },
   {
     "slug": "booth-icon",
     "title": "BOOTHやBASEのショップをホーム画面に追加するとアイコンが変わる問題",
     "subtitle": "ショップのアイコンがラクダになる理由と、本来の見た目で置く方法。",
-    "thumb": "/assets/thumb/booth.png",
-    "seo": "BOOTHやBASEのショップをホーム画面に追加したときのアイコン問題と対策。",
+    "description": "BOOTHやBASEのショップをホーム画面に追加したときのアイコン問題と対策。",
+    "thumb": "/assets/thumb/booth-icon.png",
     "date": "2026-01-21"
   },
   {
     "slug": "shortcut-compare",
     "title": "ショートカット方式とOJapp方式の違いを徹底比較",
     "subtitle": "設定の手間・共有性・自由度など、どっちが優れているか解説。",
-    "thumb": "/assets/thumb/vs-short.png",
-    "seo": "ショートカットでホーム追加する方法とOJapp方式を比較し、長所と短所を整理。",
+    "description": "ショートカットでホーム追加する方法とOJapp方式を比較し、長所と短所を整理。",
+    "thumb": "/assets/thumb/shortcut-compare.png",
     "date": "2026-01-20"
   },
   {
-  "slug": "oj-pass",
-  "title": "忘れても思い出せるパスワード生成ツールを作った話 | OJ-Pass",
-  "subtitle": "覚えなくても思い出せる“再現式パスワード”の仕組みと、開発の裏側を解説。",
-  "thumb": "/assets/thumb/pass.png",
-  "seo": "スマホが壊れても思い出せる“再現可能パスワード生成ツール OJ-Pass”の仕組みと開発背景を解説します。覚える必要がない安心のパスワード管理法。",
-  "date": "2026-01-22"
-}
-
+    "slug": "oj-pass",
+    "title": "忘れても思い出せるパスワード生成ツールを作った話 | OJ-Pass",
+    "subtitle": "覚えなくても思い出せる“再現式パスワード”の仕組みと、開発の裏側を解説。",
+    "description": "スマホが壊れても思い出せる“再現可能パスワード生成ツール OJ-Pass”の仕組みと開発背景を解説します。覚える必要がない安心のパスワード管理法。",
+    "thumb": "/assets/thumb/oj-pass.png",
+    "date": "2026-01-22"
+  }
 ]

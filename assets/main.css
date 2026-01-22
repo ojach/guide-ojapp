@@ -92,4 +92,50 @@ article p {
   padding-left: 6px;
   border-left: 4px solid #52bfff;
 }
+/* ======== 記事一覧 2列固定レイアウト ======== */
 
+.articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* PC もスマホも2列固定 */
+  gap: 16px;
+  padding: 16px;
+}
+
+/* ======== カード ======== */
+.card {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* サムネ（横長画像） */
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* タイトル */
+.card h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 10px 12px 4px;
+  line-height: 1.4;
+}
+
+/* サブタイトル */
+.card .subtitle {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 12px 12px;
+  line-height: 1.5;
+}

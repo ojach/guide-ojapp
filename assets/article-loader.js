@@ -19,7 +19,7 @@
   // OGP反映
   document.querySelector("meta[property='og:title']").content = meta.title;
   document.querySelector("meta[property='og:description']").content = meta.description;
-  document.querySelector("meta[property='og:image']").content = meta.ogp;
+  document.querySelector("meta[property='og:image']").content = meta.thomb;
   document.querySelector("meta[property='og:url']").content = location.href;
 
   // 本文読込

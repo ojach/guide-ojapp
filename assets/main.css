@@ -174,3 +174,48 @@ article p {
   cursor: pointer;
   padding: 8px;
 }
+/* ドロワー背景（黒い透明のやつ） */
+#drawerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+  z-index: 998;
+}
+
+#drawerOverlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ドロワーメニュー本体 */
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  padding: 80px 20px;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: right .25s ease;
+  z-index: 999;
+}
+
+.drawer-menu.open {
+  right: 0;
+}
+
+/* 三ボタン */
+.drawer-button {
+  background: none;
+  border: none;
+  font-size: 26px;
+  padding: 8px;
+  cursor: pointer;
+}

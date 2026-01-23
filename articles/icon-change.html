@@ -28,17 +28,26 @@
 
 <!-- 共通パーツ読込 -->
 <script>
-fetch('/partials/header.html').then(r => r.text()).then(html => {
-  document.getElementById('header').innerHTML = html;
-});
-fetch('/partials/footer.html').then(r => r.text()).then(html => {
-  document.getElementById('footer').innerHTML = html;
-});
+fetch('/partials/header.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+
+    // ← ヘッダーを挿入した後に drawer.js を読み込む！
+    const s = document.createElement('script');
+    s.src = '/assets/drawer.js';
+    document.body.appendChild(s);
+  });
+
+fetch('/partials/footer.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('footer').innerHTML = html;
+  });
 </script>
 
-<!-- 記事読み込み本体 -->
+<!-- 記事本体読み込み -->
 <script src="/assets/article-loader.js"></script>
-<script src="/assets/drawer.js"></script>
 
 </body>
 </html>

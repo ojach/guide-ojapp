@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>読み込み中…｜OJapp Guide</title>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <script defer src="/assets/drawer.js"></script>
+  <meta name="description" content="">
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<main id="article"></main>
+
+<div id="footer"></div>
+
+<script>
+(async () => {
+  const slug = location.pathname.split("/").pop().replace(".html", "");
+  const list = await (await fetch("/articles/list.json")).json();
+  const meta = list.find(a => a.slug === slug);
+
+  // SEO
+  document.title = `${meta.title}｜OJapp Guide`;
+  document.querySelector("meta[name='description']").content = meta.seo;
+
+  // ヘッダーとフッター
+  document.querySelector("#header").innerHTML =
+    await (await fetch("/components/header.html")).text();
+
+  document.querySelector("#footer").innerHTML =
+    await (await fetch("/components/footer.html")).text();
+
+  // 本文
+  const html = await (await fetch(`/articles/content/${slug}.html`)).text();
+  document.querySelector("#article").innerHTML = html;
+})();
+</script>
+
+</body>
+</html>

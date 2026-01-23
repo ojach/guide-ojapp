@@ -139,3 +139,11 @@ article p {
   margin: 0 12px 12px;
   line-height: 1.5;
 }
+
+.site-footer {
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}

@@ -47,7 +47,7 @@ async function loadArticles() {
   const list = document.getElementById("article-list");
 
   list.innerHTML = posts.reverse().map(post => `
-    <a class="card" href="/articles/content/${post.slug}.html">
+    <a class="card" href="/articles/${post.slug}.html">
       <img src="${post.thumb}" alt="${post.title}">
       <div class="card-body">
         <h3>${post.title}</h3>

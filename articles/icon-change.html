@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1407191111362064"
+     crossorigin="anonymous"></script>
+  
+  <title>Loading...</title>
+  <meta name="description" content="Loading..." />
+
+  <!-- OGP（読み込み後にJSで上書き） -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<main id="article"></main>
+
+<div id="footer"></div>
+
+<!-- 共通パーツ読込 -->
+<script>
+fetch('/partials/header.html').then(r => r.text()).then(html => {
+  document.getElementById('header').innerHTML = html;
+});
+fetch('/partials/footer.html').then(r => r.text()).then(html => {
+  document.getElementById('footer').innerHTML = html;
+});
+</script>
+
+<!-- 記事読み込み本体 -->
+<script src="/assets/article-loader.js"></script>
+<script src="/assets/drawer.js"></script>
+
+</body>
+</html>

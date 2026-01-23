@@ -219,3 +219,18 @@ article p {
   padding: 8px;
   cursor: pointer;
 }
+.menu {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 12px;
+}
+
+.menu.hidden {
+  display: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+}

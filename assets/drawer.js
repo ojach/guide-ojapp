@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("drawerBtn");
-  const drawer = document.getElementById("drawer");
-
-  if (!btn || !drawer) return; // 安全対策
+  const btn = document.getElementById("drawerToggle");
+  const menu = document.getElementById("drawerMenu");
 
   btn.addEventListener("click", () => {
-    drawer.classList.toggle("open");
+    menu.classList.toggle("open");
   });
 });

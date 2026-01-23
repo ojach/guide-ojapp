@@ -16,6 +16,11 @@ header {
   font-weight: bold;
   text-decoration: none;
 }
+.header-left{
+  color: #2bb7ff;
+  font-weight: bold;
+  text-decoration: none;
+}
 main {
   padding: 20px;
   max-width: 900px;

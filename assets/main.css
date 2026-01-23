@@ -147,3 +147,30 @@ article p {
   color: #888;
   font-size: 14px;
 }
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  right: -260px; /* 隠しておく位置 */
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+  padding: 80px 20px; /* ヘッダーを避ける */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.drawer-menu.open {
+  right: 0;
+}
+
+.drawer-button {
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 8px;
+}

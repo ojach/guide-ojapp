@@ -11,7 +11,7 @@ header {
   background: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-site-header {
+.site-header {
   color: #2bb7ff;
   font-weight: bold;
   text-decoration: none;

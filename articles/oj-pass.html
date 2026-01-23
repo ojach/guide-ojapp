@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1407191111362064"
+     crossorigin="anonymous"></script>
+  
+  <title>Loading...</title>
+  <meta name="description" content="Loading..." />
 
-  <title>読み込み中…｜OJapp Guide</title>
+  <!-- OGP（読み込み後にJSで上書き） -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <script defer src="/assets/drawer.js"></script>
-  <meta name="description" content="">
 </head>
-
 <body>
 
 <div id="header"></div>
@@ -19,28 +26,19 @@
 
 <div id="footer"></div>
 
+<!-- 共通パーツ読込 -->
 <script>
-(async () => {
-  const slug = location.pathname.split("/").pop().replace(".html", "");
-  const list = await (await fetch("/articles/list.json")).json();
-  const meta = list.find(a => a.slug === slug);
-
-  // SEO
-  document.title = `${meta.title}｜OJapp Guide`;
-  document.querySelector("meta[name='description']").content = meta.seo;
-
-  // ヘッダーとフッター
-  document.querySelector("#header").innerHTML =
-    await (await fetch("/components/header.html")).text();
-
-  document.querySelector("#footer").innerHTML =
-    await (await fetch("/components/footer.html")).text();
-
-  // 本文
-  const html = await (await fetch(`/articles/content/${slug}.html`)).text();
-  document.querySelector("#article").innerHTML = html;
-})();
+fetch('/partials/header.html').then(r => r.text()).then(html => {
+  document.getElementById('header').innerHTML = html;
+});
+fetch('/partials/footer.html').then(r => r.text()).then(html => {
+  document.getElementById('footer').innerHTML = html;
+});
 </script>
+
+<!-- 記事読み込み本体 -->
+<script src="/assets/article-loader.js"></script>
+<script src="/assets/drawer.js"></script>
 
 </body>
 </html>

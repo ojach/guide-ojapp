@@ -27,7 +27,9 @@
 
   // 記事生成
   document.getElementById("article").innerHTML = `
-    <h1>${meta.title}</h1>
+    <div class="thumb-wrap">
+    <img src="${meta.thumb}" alt="${meta.title}" class="article-thumb">
+  </div>
     <p class="subtitle">${meta.subtitle}</p>
     <article>${body}</article>
   `;

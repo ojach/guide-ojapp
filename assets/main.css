@@ -253,3 +253,32 @@ article p {
   border-radius: 16px;
   display: block;
 }
+/* 記事本文 全体の読みやすさ改善 */
+#article {
+  max-width: 760px;       /* PCでの横幅制限 */
+  margin: 0 auto;
+  line-height: 1.75;      /* 行間広め */
+  font-size: 17px;
+}
+
+/* 見出し間の余白 */
+#article h2,
+#article h3 {
+  margin-top: 2.2em;
+  margin-bottom: 1em;
+}
+
+/* 箇条書きの余白調整 */
+#article ul,
+#article ol {
+  margin: 1em 0 1.5em 1.2em;
+}
+
+#article li {
+  margin-bottom: 0.6em; /* 箇条書きも息させる */
+}
+
+/* 段落の余白 */
+#article p {
+  margin: 1.2em 0;
+}

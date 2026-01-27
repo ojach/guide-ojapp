@@ -30,5 +30,14 @@
     "description": "スマホが壊れても思い出せる“再現可能パスワード生成ツール OJ-Pass”の仕組みと開発背景を解説します。覚える必要がない安心のパスワード管理法。",
     "thumb": "/assets/thumb/oj-pass.png",
     "date": "2026-01-22"
-  }
+  },
+  {
+  "slug": "splitter-guide",
+  "title": "写真を3×3・4×4に分割できる無料WEBツール｜OJapp splitter",
+  "subtitle": "スマホだけで写真を好きな行数 × 列数に分割できる無料ツール。",
+  "description": "グリッド投稿やホーム画面アイコン作成に最適な写真分割ツール OJapp splitter の使い方・特徴を解説。",
+  "thumb": "/assets/thumb/splitter-guide.png",
+  "date": "2026-01-24"
+}
+
 ]

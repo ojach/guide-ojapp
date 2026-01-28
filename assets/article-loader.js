@@ -46,6 +46,7 @@
   </p>
 
   <p>
+  Webサイトをホーム画面に追加する時のアイコンを自由に設定する <strong>OJapp</strong>、
     写真を行×列に分割できる <strong>OJapp splitter</strong>、
     忘れても思い出せる再現式パスワード <strong>OJ-Pass</strong>、
     自然なウォーターマーク生成 <strong>WaterMark</strong>、

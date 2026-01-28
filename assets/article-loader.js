@@ -32,5 +32,17 @@
   </div>
     <p class="subtitle">${meta.subtitle}</p>
     <article>${body}</article>
+    <hr class="article-end">
+
+<section class="ojapp-about">
+  <h2>OJapp について</h2>
+  <p>
+    OJapp は、ホーム画面を自由にカスタムするための無料ツール集です。
+    写真分割ツール「OJapp splitter」、再現式パスワード生成「OJ-Pass」、
+    ウォーターマーク生成「WaterMark」、高画質写真を圧縮してガラケー風フィルム風にする「PastCamera」、
+     など、すべてブラウザだけで無料で使えます。
+  </p>
+  <p><a href="https://ojapp.app/top/">▶ OJapp を見る</a></p>
+</section>
   `;
 })();

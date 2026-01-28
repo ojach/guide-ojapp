@@ -38,6 +38,14 @@
   "description": "グリッド投稿やホーム画面アイコン作成に最適な写真分割ツール OJapp splitter の使い方・特徴を解説。",
   "thumb": "/assets/thumb/splitter-guide.png",
   "date": "2026-01-24"
-}
+},
+  {
+  "slug": "watermark-tool",
+  "title": "画像に透かし文字を入れられる無料WEBツール",
+  "subtitle": "スマホだけで完成する、著作権保護のための軽量ウォーターマーク作成ツール。",
+  "description": "画像に文字透かしを追加し、盗用防止やSNS投稿でのブランド表示に使える無料ツール。位置調整・透明度などをスライダーで直感的に編集できます。",
+  "thumb": "/assets/thumb/watermark-tool.png",
+  "date": "2026-01-28"
+  }
 
 ]

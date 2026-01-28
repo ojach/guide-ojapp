@@ -1,5 +1,13 @@
 [
   {
+  "slug": "home-add-cannot",
+  "title": "ホーム画面に追加できない原因と解決方法まとめ",
+  "subtitle": "iPhone・Androidでホーム画面に追加できない時のチェックポイントと対処法。",
+  "description": "ホーム画面に追加できない場合の原因を、Safari・Chromeそれぞれの仕様から徹底解説。アイコンが出ない・ボタンが表示されない時の具体的な対処方法をまとめました。",
+  "thumb": "/assets/thumb/home-add-cannot.png",
+  "date": "2026-01-28"
+  },
+  {
   "slug": "home-custom-compare",
   "title": "ショートカット・Webアプリ方式・OJapp方式を徹底比較",
   "subtitle": "3つのホーム画面カスタマイズ方法の違いを、分かりやすくまとめました。",

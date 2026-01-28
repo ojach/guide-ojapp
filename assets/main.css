@@ -282,3 +282,23 @@ article p {
 #article p {
   margin: 1.2em 0;
 }
+.ojapp-about {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: #f7f7fb;
+  border-radius: 12px;
+  line-height: 1.75;
+}
+
+.ojapp-about h2 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.ojapp-about p {
+  margin-bottom: 1rem;
+}
+
+.ojapp-link a {
+  font-weight: bold;
+}

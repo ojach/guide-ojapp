@@ -1,5 +1,13 @@
 [
   {
+  "slug": "home-add-basic",
+  "title": "iPhone・Androidで「ホーム画面に追加」する方法をわかりやすく解説",
+  "subtitle": "Safari / Chrome でホームに置く手順と、サイトごとの違いを丁寧に解説。",
+  "description": "iPhone・Androidでホーム画面に追加する手順を初心者向けに解説。アイコンが変わる理由や自由に置けない仕組みもわかる。",
+  "thumb": "/assets/thumb/home-add-basic.png",
+  "date": "2026-01-28"
+  },
+  {
     "slug": "icon-change",
     "title": "ショートカットなしでホーム画面のアイコンを変更する方法",
     "subtitle": "iPhone/Androidですぐ使える、最も簡単なアイコン変更ガイド。",

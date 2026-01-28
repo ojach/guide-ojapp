@@ -34,35 +34,35 @@
     <article>${body}</article>
     <hr class="article-end">
 
-<hr>
 
-<section class="ojapp-about">
+<section class="ojapp-card">
   <h2>OJapp について</h2>
 
   <p>
     OJapp は、ホーム画面をもっと自由に楽しむための
     “小さくて便利な Web ツール” を集めたサービスです。
-    すべてブラウザだけで使えるため、アプリのインストールは不要。
-    iPhone・Android どちらでもすぐに利用できます。
+    すべてブラウザだけで使え、アプリのインストールは不要。
+    iPhone・Android のどちらでもすぐ利用できます。
   </p>
 
   <p>
     写真を行×列に分割できる <strong>OJapp splitter</strong>、
-    忘れても思い出せる再現式パスワード生成 <strong>OJ-Pass</strong>、
-    画像に自然なウォーターマークを入れられる <strong>WaterMark</strong>、
-    古いデジカメ風の写真が作れる <strong>PastCamera</strong> など、
-    シンプルだけど “ちょうど欲しい” を満たすツールを提供しています。
+    忘れても思い出せる再現式パスワード <strong>OJ-Pass</strong>、
+    自然なウォーターマーク生成 <strong>WaterMark</strong>、
+    高画質写真をガラケー風に変換する <strong>PastCamera</strong> など、
+    “ちょうど欲しい” を満たすツールをそろえています。
   </p>
 
   <p>
-    面倒な設定や登録も不要で、誰でもすぐ使えるように設計しています。
-    ホーム画面のカスタム、SNS投稿、作品づくりなど、
+    登録不要・設定不要で、誰でもすぐ使える設計。
+    ホーム画面のカスタム、SNS投稿、作品づくりまで、
     日常の「もう少しこうしたい」を軽くするために作られています。
   </p>
 
-  <p class="ojapp-link">
-    ▶ <a href="https://ojapp.app/top/">OJapp を見る</a>
+  <p class="card-link">
+    ▶ <a href="https://ojapp.app/">OJapp を見る</a>
   </p>
 </section>
+
   `;
 })();

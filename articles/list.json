@@ -1,5 +1,13 @@
 [
   {
+  "slug": "home-custom-compare",
+  "title": "ショートカット・Webアプリ方式・OJapp方式を徹底比較",
+  "subtitle": "3つのホーム画面カスタマイズ方法の違いを、分かりやすくまとめました。",
+  "description": "ショートカット方式・通常のホーム画面追加・OJapp方式の3つを比較。手軽さ、再現性、共有性、デザイン面での違いを解説します。",
+  "thumb": "/assets/thumb/home-custom-compare.png",
+  "date": "2026-01-28"
+  },
+  {
   "slug": "home-add-basic",
   "title": "iPhone・Androidで「ホーム画面に追加」する方法をわかりやすく解説",
   "subtitle": "Safari / Chrome でホームに置く手順と、サイトごとの違いを丁寧に解説。",

@@ -1,5 +1,13 @@
 [
   {
+  "slug": "make-icon",
+  "title": "iPhone・Androidのホーム画面アイコンの作り方と作成ツール比較",
+  "subtitle": "Canva・写真アプリ・OJappなど、アイコン画像を作る最適な方法をまとめて解説。",
+  "description": "ホーム画面アイコンを自作する方法を徹底解説。Canva・画像編集アプリ・OJappでの作り方、推奨サイズ、透過PNGの作り方、注意点などを網羅的にまとめています。",
+  "thumb": "/assets/thumb/make-icon.png",
+  "date": "2026-01-28"
+  },
+  {
   "slug": "home-add-cannot",
   "title": "ホーム画面に追加できない原因と解決方法まとめ",
   "subtitle": "iPhone・Androidでホーム画面に追加できない時のチェックポイントと対処法。",

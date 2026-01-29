@@ -1,5 +1,13 @@
 [
   {
+  "slug": "how-to-pwa",
+  "title": "PWAの作り方｜manifest.json・Service Worker・ホーム画面対応を丁寧に解説",
+  "subtitle": "スマホで“アプリのように動く”Webサイトを作る手順まとめ。",
+  "description": "WebサイトをPWA化するための手順を、manifest.json や Service Worker を中心にわかりやすく解説。初心者〜中級者向けの実装ガイド。",
+  "thumb": "/assets/thumb/pwa-how.png",
+  "date": "2026-01-29"
+  },
+  {
   "slug": "what-is-pwa",
   "title": "PWAとは？スマホのWebサイトを“アプリ化”する仕組みをわかりやすく解説",
   "subtitle": "ホーム画面に追加の正体を、初心者向けにまとめました。",

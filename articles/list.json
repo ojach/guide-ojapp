@@ -1,5 +1,13 @@
 [
   {
+  "slug": "compare-pwa-shortcut-ojapp",
+  "title": "PWA・ショートカット・OJappの違いを徹底比較｜どれを使うべきか",
+  "subtitle": "目的別に最適解を見つけるための実践ガイド。",
+  "description": "ホーム画面追加の3方式“PWA・ショートカット・OJapp”を比較し、誰がどれを使うべきかを丁寧に整理。設定方法・自由度・再現性・共有性の違いを総まとめ。",
+  "thumb": "/assets/thumb/pwa-shortcut-ojapp.png",
+  "date": "2026-01-29"
+  },
+  {
   "slug": "how-to-pwa",
   "title": "PWAの作り方｜manifest.json・Service Worker・ホーム画面対応を丁寧に解説",
   "subtitle": "スマホで“アプリのように動く”Webサイトを作る手順まとめ。",

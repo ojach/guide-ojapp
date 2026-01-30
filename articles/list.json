@@ -1,5 +1,13 @@
 [
   {
+  "slug": "local-storage-basics",
+  "title": "ローカル保存とは？キャッシュ・Cookieの違いをやさしく解説",
+  "subtitle": "スマホ容量を圧迫する“消してもいいデータ”を整理しよう。",
+  "description": "キャッシュ・Cookie・ローカルストレージの違いと、安全に削除できるデータを初心者向けに解説します。",
+  "thumb": "/assets/thumb/local.png",
+  "date": "2026-01-29"
+  },
+  {
   "slug": "compare-pwa-shortcut-ojapp",
   "title": "PWA・ショートカット・OJappの違いを徹底比較｜どれを使うべきか",
   "subtitle": "目的別に最適解を見つけるための実践ガイド。",
